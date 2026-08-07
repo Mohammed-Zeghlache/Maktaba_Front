@@ -1,0 +1,35 @@
+/* ========================================================
+   AUTH
+   ======================================================== */
+.auth-container {
+  max-width: 400px; margin: 44px auto;
+  padding: 36px 32px; background: var(--white);
+  border-radius: var(--radius-md); border: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+}
+.auth-container h1 {
+  font-size: 1.7rem; font-weight: 700; margin-bottom: 4px;
+  font-family: var(--font-serif);
+}
+[lang="ar"] .auth-container h1 { font-family: var(--font-arabic); }
+.auth-container .subtitle {
+  color: var(--text-secondary); margin-bottom: 22px;
+  font-family: var(--font-sans);
+}
+[lang="ar"] .auth-container .subtitle { font-family: var(--font-arabic); }
+.auth-container .form-group { margin-bottom: 14px; }
+.auth-container .btn { width: 100%; padding: 12px; font-size: 0.92rem; }
+.auth-container .auth-link {
+  text-align: center; margin-top: 14px; color: var(--text-secondary);
+  font-family: var(--font-sans);
+}
+[lang="ar"] .auth-container .auth-link { font-family: var(--font-arabic); }
+.auth-container .auth-link a { color: var(--gold); text-decoration: none; font-weight: 500; cursor: pointer; }
+
+.login-required {
+  text-align: center; padding: 44px 20px;
+  background: var(--white); border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+}
+.login-required i { font-size: 3rem; color: var(--gold); margin-bottom: 14px; display: block; }
+.login-required p { color: var(--text-secondary); margin-bottom: 18px; }

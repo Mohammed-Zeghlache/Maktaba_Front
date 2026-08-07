@@ -1,0 +1,16 @@
+/* ========================================================
+   FOOTER
+   ======================================================== */
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 32px 0 24px;
+  display: flex; flex-wrap: wrap;
+  justify-content: space-between; align-items: center;
+  color: var(--text-secondary); gap: 12px;
+}
+.footer .logo {
+  font-weight: 700; font-size: 1.2rem; color: var(--black);
+  font-family: var(--font-serif);
+}
+[lang="ar"] .footer .logo { font-family: var(--font-arabic); }
+.footer .logo span { color: var(--gold); font-weight: 300; }

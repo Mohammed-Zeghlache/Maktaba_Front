@@ -1,0 +1,666 @@
+/* ========================================================
+   BOOK DETAILS - Complete Styles
+   ======================================================== */
+
+/* --- Container --- */
+.book-detail {
+  padding: 20px 0 50px;
+}
+
+/* --- Back Button --- */
+.btn-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  cursor: pointer;
+  padding: 8px 0;
+  margin-bottom: 20px;
+  transition: color 0.3s;
+  font-family: inherit;
+}
+
+.btn-back:hover {
+  color: var(--gold);
+}
+
+.btn-back i {
+  font-size: 0.85rem;
+}
+
+/* --- Grid --- */
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+}
+
+/* --- Images --- */
+.detail-images {
+  position: sticky;
+  top: 100px;
+  align-self: flex-start;
+}
+
+.main-image {
+  background: var(--off-white);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  height: 420px;
+}
+
+.main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+.thumbnails img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid var(--border);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.thumbnails img:hover {
+  border-color: var(--gold-light);
+  transform: scale(1.05);
+}
+
+.thumbnails img.active {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(184, 148, 60, 0.2);
+}
+
+/* --- Info --- */
+.detail-info h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 4px;
+  color: var(--black);
+  font-family: var(--font-serif);
+  line-height: 1.2;
+}
+
+[lang="ar"] .detail-info h1 {
+  font-family: var(--font-arabic);
+}
+
+.detail-info .author {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+}
+
+/* --- Status Badge --- */
+.status-badge {
+  display: inline-block;
+  padding: 4px 16px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.status-badge.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status-badge.rejected {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+/* --- Owner --- */
+.owner-box {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  background: var(--off-white);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  margin: 14px 0 18px;
+}
+
+.owner-box .avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+  font-size: 1rem;
+}
+
+.owner-box .info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.owner-box .name {
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--text-primary);
+}
+
+.owner-box .phone {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.owner-box .phone i {
+  color: var(--gold);
+  margin-right: 5px;
+  font-size: 0.75rem;
+}
+
+/* --- Badges --- */
+.badge-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 14px 0 18px;
+}
+
+.badge-row .badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 16px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.badge-row .badge i {
+  font-size: 0.75rem;
+}
+
+.badge-row .badge.free {
+  background: #d4edda;
+  color: #155724;
+}
+
+.badge-row .badge.sell {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.badge-row .badge.exchange {
+  background: #d1ecf1;
+  color: #0c5460;
+}
+
+.badge-row .badge.condition {
+  background: #e8edf5;
+  color: #4a6fb3;
+}
+
+/* --- Meta --- */
+.meta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 24px;
+  margin: 16px 0 18px;
+}
+
+.meta-grid .item {
+  display: flex;
+  gap: 8px;
+  font-size: 0.88rem;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.meta-grid .item .label {
+  color: var(--text-secondary);
+  min-width: 75px;
+  flex-shrink: 0;
+}
+
+.meta-grid .item .value {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+/* --- Description --- */
+.desc-box {
+  margin: 16px 0 20px;
+}
+
+.desc-box h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--black);
+  font-family: var(--font-serif);
+}
+
+[lang="ar"] .desc-box h4 {
+  font-family: var(--font-arabic);
+}
+
+.desc-box p {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.8;
+}
+
+/* --- Call Button --- */
+.btn-call {
+  width: 100%;
+  padding: 12px;
+  background: var(--gold);
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 10px 0 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: inherit;
+}
+
+.btn-call:hover {
+  background: var(--gold-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow);
+}
+
+.btn-call:active {
+  transform: translateY(0);
+}
+
+.btn-call i {
+  font-size: 1rem;
+}
+
+/* --- Notice --- */
+.notice-box {
+  padding: 14px 18px;
+  background: #fff3cd;
+  border-radius: 10px;
+  text-align: center;
+  color: #856404;
+  font-size: 0.88rem;
+  margin: 10px 0 12px;
+  border: 1px solid #ffeeba;
+}
+
+.notice-box i {
+  margin-right: 8px;
+}
+
+/* --- Actions --- */
+.action-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-light);
+  margin: 8px 0 10px;
+}
+
+.action-row button {
+  padding: 6px 18px;
+  font-size: 0.8rem;
+  border-radius: 40px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: inherit;
+  min-height: 34px;
+}
+
+.action-row button:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+  background: rgba(184, 148, 60, 0.05);
+}
+
+.action-row button i {
+  font-size: 0.8rem;
+}
+
+.action-row .btn-danger {
+  border-color: #dc3545;
+  color: #dc3545;
+}
+
+.action-row .btn-danger:hover {
+  background: #dc3545;
+  color: #fff;
+  border-color: #dc3545;
+}
+
+.action-row .btn-edit:hover {
+  border-color: #17a2b8;
+  color: #17a2b8;
+}
+
+/* --- Views --- */
+.views-box {
+  font-size: 0.78rem;
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.views-box i {
+  font-size: 0.85rem;
+}
+
+/* --- Similar --- */
+.similar-box {
+  margin-top: 45px;
+  padding-top: 35px;
+  border-top: 1px solid var(--border);
+}
+
+.similar-box h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: var(--black);
+  font-family: var(--font-serif);
+}
+
+[lang="ar"] .similar-box h3 {
+  font-family: var(--font-arabic);
+}
+
+/* --- Spinner --- */
+.spinner {
+  width: 44px;
+  height: 44px;
+  margin: 0 auto;
+  border: 3px solid var(--border);
+  border-top-color: var(--gold);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* --- Utilities --- */
+.text-center {
+  text-align: center;
+}
+
+.py-5 {
+  padding: 60px 0;
+}
+
+.mt-2 {
+  margin-top: 10px;
+}
+
+.mt-3 {
+  margin-top: 16px;
+}
+
+.mb-2 {
+  margin-bottom: 10px;
+}
+
+.fa-3x {
+  font-size: 3rem;
+}
+
+/* ========================================================
+   RESPONSIVE
+   ======================================================== */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .detail-grid {
+    gap: 30px;
+  }
+
+  .main-image {
+    height: 360px;
+  }
+
+  .detail-images {
+    position: static;
+  }
+
+  .detail-info h1 {
+    font-size: 1.7rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .book-detail {
+    padding: 12px 0 30px;
+  }
+
+  .detail-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .main-image {
+    height: 300px;
+  }
+
+  .thumbnails img {
+    width: 52px;
+    height: 52px;
+  }
+
+  .detail-info h1 {
+    font-size: 1.4rem;
+  }
+
+  .detail-info .author {
+    font-size: 0.88rem;
+  }
+
+  .meta-grid {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .meta-grid .item {
+    font-size: 0.84rem;
+    padding: 5px 0;
+  }
+
+  .meta-grid .item .label {
+    min-width: 65px;
+    font-size: 0.8rem;
+  }
+
+  .btn-call {
+    font-size: 0.9rem;
+    padding: 11px;
+  }
+
+  .action-row button {
+    flex: 1;
+    justify-content: center;
+    min-width: 70px;
+    padding: 6px 14px;
+    font-size: 0.76rem;
+  }
+
+  .badge-row .badge {
+    font-size: 0.76rem;
+    padding: 4px 14px;
+  }
+
+  .similar-box {
+    margin-top: 30px;
+    padding-top: 20px;
+  }
+
+  .similar-box h3 {
+    font-size: 1.05rem;
+  }
+
+  .btn-back {
+    font-size: 0.82rem;
+    margin-bottom: 14px;
+  }
+
+  .owner-box {
+    padding: 12px 14px;
+  }
+
+  .owner-box .avatar {
+    width: 36px;
+    height: 36px;
+    font-size: 0.85rem;
+  }
+
+  .desc-box p {
+    font-size: 0.88rem;
+  }
+
+  .notice-box {
+    font-size: 0.84rem;
+    padding: 12px 14px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .book-detail {
+    padding: 8px 0 20px;
+  }
+
+  .main-image {
+    height: 220px;
+  }
+
+  .thumbnails img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .detail-info h1 {
+    font-size: 1.2rem;
+  }
+
+  .detail-info .author {
+    font-size: 0.82rem;
+  }
+
+  .badge-row .badge {
+    font-size: 0.7rem;
+    padding: 3px 12px;
+  }
+
+  .badge-row {
+    gap: 6px;
+  }
+
+  .meta-grid .item {
+    font-size: 0.78rem;
+    padding: 4px 0;
+  }
+
+  .meta-grid .item .label {
+    min-width: 55px;
+    font-size: 0.74rem;
+  }
+
+  .desc-box p {
+    font-size: 0.82rem;
+  }
+
+  .btn-call {
+    font-size: 0.82rem;
+    padding: 9px;
+    border-radius: 30px;
+  }
+
+  .action-row {
+    gap: 5px;
+  }
+
+  .action-row button {
+    font-size: 0.7rem;
+    padding: 4px 10px;
+    min-height: 30px;
+    min-width: 50px;
+  }
+
+  .action-row button i {
+    font-size: 0.7rem;
+  }
+
+  .similar-box h3 {
+    font-size: 0.9rem;
+  }
+
+  .views-box {
+    font-size: 0.7rem;
+  }
+
+  .notice-box {
+    font-size: 0.8rem;
+    padding: 10px 12px;
+  }
+
+  .owner-box {
+    padding: 10px 12px;
+  }
+
+  .owner-box .avatar {
+    width: 32px;
+    height: 32px;
+    font-size: 0.75rem;
+  }
+
+  .owner-box .name {
+    font-size: 0.82rem;
+  }
+
+  .owner-box .phone {
+    font-size: 0.72rem;
+  }
+
+  .status-badge {
+    font-size: 0.7rem;
+    padding: 3px 12px;
+  }
+}

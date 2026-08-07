@@ -1,0 +1,23 @@
+/* ========================================================
+   MODAL
+   ======================================================== */
+.modal-overlay {
+  position: fixed; inset: 0; background: rgba(26, 24, 22, 0.5);
+  backdrop-filter: blur(12px); display: none;
+  align-items: center; justify-content: center; z-index: 2000; padding: 20px;
+}
+.modal-overlay.active { display: flex; }
+.modal {
+  background: var(--white); border-radius: var(--radius-md);
+  padding: 28px; max-width: 420px; width: 100%;
+  box-shadow: var(--shadow-lg); animation: modalIn 0.3s ease; text-align: center;
+}
+.modal h3 { font-family: var(--font-serif); }
+[lang="ar"] .modal h3 { font-family: var(--font-arabic); }
+.modal p {
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+}
+[lang="ar"] .modal p { font-family: var(--font-arabic); }
+@keyframes modalIn { from { transform: scale(0.95); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+.modal .modal-actions { display: flex; gap: 8px; margin-top: 18px; justify-content: center; }

@@ -1,0 +1,78 @@
+/* ========================================================
+   NAVBAR — Luxury
+   ======================================================== */
+.navbar {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 14px 0; border-bottom: 1px solid var(--border);
+  background: color-mix(in srgb, var(--white) 92%, transparent);
+  backdrop-filter: blur(20px);
+  position: sticky; top: 0; z-index: 1000;
+  transition: background 0.4s ease;
+}
+.navbar .nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 8px;
+}
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.navbar .logo {
+  font-family: var(--font-serif);
+  font-weight: 700; font-size: 1.3rem; letter-spacing: -0.01em;
+  color: var(--black); flex-shrink: 0; cursor: pointer;
+  white-space: nowrap;
+}
+[lang="ar"] .navbar .logo { font-family: var(--font-arabic); }
+.navbar .logo span { color: var(--gold); font-weight: 300; }
+.nav-links {
+  display: flex; gap: 26px;
+  font-weight: 400; color: var(--text-secondary);
+  font-size: 0.9rem; align-items: center; justify-content: center;
+  font-family: var(--font-sans);
+}
+[lang="ar"] .nav-links { font-family: var(--font-arabic); }
+.nav-links a {
+  text-decoration: none; color: var(--text-secondary);
+  transition: var(--transition); cursor: pointer;
+  padding: 4px 0; border-bottom: 1.5px solid transparent;
+  letter-spacing: 0.02em;
+}
+.nav-links a:hover, .nav-links a.active { color: var(--gold); border-bottom-color: var(--gold); }
+.nav-actions {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+}
+.menu-toggle {
+  display: none;
+  align-items: center; justify-content: center;
+  width: 36px; height: 36px; border-radius: 50%;
+  font-size: 0.95rem; cursor: pointer; color: var(--text-secondary);
+  background: var(--white); border: 1px solid var(--border);
+  transition: var(--transition); flex-shrink: 0;
+}
+.menu-toggle:hover { border-color: var(--gold); color: var(--gold); }
+.icon-toggle {
+  display: flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px; border-radius: 50%;
+  border: 1px solid var(--border); background: var(--white);
+  color: var(--text-secondary); cursor: pointer;
+  transition: var(--transition); font-size: 0.78rem; font-weight: 400;
+  position: relative; flex-shrink: 0;
+}
+.icon-toggle:hover { border-color: var(--gold); color: var(--gold); }
+.wishlist-count {
+  position: absolute; top: -4px; inset-inline-start: -4px;
+  background: var(--gold); color: #fff;
+  font-size: 0.5rem; font-weight: 600; font-family: var(--font-sans);
+  min-width: 16px; height: 16px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; padding: 0 3px;
+}

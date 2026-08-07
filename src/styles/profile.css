@@ -1,0 +1,29 @@
+/* ========================================================
+   PROFILE
+   ======================================================== */
+.profile-header {
+  display: flex; align-items: center; gap: 22px;
+  padding: 28px; background: var(--white);
+  border-radius: var(--radius-md); border: 1px solid var(--border);
+  margin-bottom: 22px; flex-wrap: wrap;
+}
+.profile-avatar {
+  width: 78px; height: 78px; border-radius: 50%;
+  background: linear-gradient(145deg, var(--off-white), var(--border));
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2.2rem; color: var(--text-secondary);
+  border: 3px solid var(--gold); flex-shrink: 0;
+}
+.profile-info h2 {
+  font-size: 1.4rem; font-weight: 600;
+  font-family: var(--font-serif);
+}
+[lang="ar"] .profile-info h2 { font-family: var(--font-arabic); }
+.profile-info .detail {
+  color: var(--text-secondary); font-size: 0.85rem;
+  font-family: var(--font-sans);
+}
+[lang="ar"] .profile-info .detail { font-family: var(--font-arabic); }
+.profile-tabs { display: flex; gap: 6px; margin-bottom: 18px; flex-wrap: wrap; }
+.profile-tab-btn.active { background: var(--primary); color: var(--white); border-color: var(--primary); }
+[data-theme="dark"] .profile-tab-btn.active { color: #1A1816; }

@@ -1,0 +1,10 @@
+/* ========================================================
+   EMPTY STATE
+   ======================================================== */
+.empty-state {
+  grid-column: 1/-1; text-align: center; padding: 44px 20px;
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+}
+[lang="ar"] .empty-state { font-family: var(--font-arabic); }
+.empty-state i { font-size: 2.2rem; color: var(--text-light); display: block; margin-bottom: 10px; }

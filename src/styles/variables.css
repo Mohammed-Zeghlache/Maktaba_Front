@@ -1,0 +1,50 @@
+/* ========================================================
+   MAKTABA — Variables & Reset
+   ======================================================== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+img { max-width: 100%; height: auto; display: block; }
+
+:root {
+  --white: #FFFFFF;
+  --off-white: #F6F4F0;
+  --black: #1A1816;
+  --primary: #1A1816;
+  --gold: #B8943C;
+  --gold-light: #D4C4A0;
+  --gold-pale: #F0EBE0;
+  --gold-hover: #A37E2C;
+  --border: #E8E2D8;
+  --border-light: #F0EBE4;
+  --text-primary: #1A1816;
+  --text-secondary: #6B655A;
+  --text-light: #A69E92;
+  --shadow-sm: 0 2px 12px rgba(26, 24, 22, 0.04);
+  --shadow-md: 0 8px 32px rgba(26, 24, 22, 0.06);
+  --shadow-lg: 0 24px 64px rgba(26, 24, 22, 0.08);
+  --shadow-glow: 0 4px 28px rgba(184, 148, 60, 0.15);
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-full: 40px;
+  --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --font-serif: 'Playfair Display', 'Cairo', serif;
+  --font-arabic: 'Cairo', 'Playfair Display', serif;
+  --font-sans: 'Playfair Display', 'Cairo', serif;
+  --font-current: var(--font-serif);
+}
+
+[data-theme="dark"] {
+  --white: #1C1A18;
+  --off-white: #141210;
+  --black: #F0EDE8;
+  --primary: #F0EDE8;
+  --border: #2E2A26;
+  --border-light: #24201E;
+  --text-primary: #F0EDE8;
+  --text-secondary: #A69E92;
+  --text-light: #6B655A;
+  --shadow-sm: 0 2px 12px rgba(0,0,0,0.3);
+  --shadow-md: 0 8px 32px rgba(0,0,0,0.4);
+  --shadow-lg: 0 24px 64px rgba(0,0,0,0.5);
+  --shadow-glow: 0 4px 28px rgba(184, 148, 60, 0.08);
+}

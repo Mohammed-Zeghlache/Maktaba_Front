@@ -1,0 +1,96 @@
+/* ========================================================
+   BROWSE
+   ======================================================== */
+.browse-layout { display: flex; gap: 48px; align-items: flex-start; padding: 8px 0; }
+.browse-sidebar {
+  flex: 0 0 240px;
+  background: transparent; border: none; box-shadow: none;
+  border-inline-end: 1px solid var(--border);
+  padding: 0 32px 0 0; position: sticky; top: 92px;
+  max-height: calc(100vh - 120px); overflow-y: auto;
+}
+html[dir="rtl"] .browse-sidebar { padding: 0 0 0 32px; }
+.browse-sidebar::-webkit-scrollbar { width: 3px; }
+.browse-sidebar::-webkit-scrollbar-track { background: transparent; }
+.browse-sidebar::-webkit-scrollbar-thumb { background: var(--border); border-radius: 10px; }
+.browse-sidebar h3 {
+  font-size: 0.72rem; font-weight: 600; margin-bottom: 20px;
+  color: var(--text-light);
+  display: flex; align-items: center; gap: 8px;
+  font-family: var(--font-sans);
+  letter-spacing: 0.12em; text-transform: uppercase;
+}
+[lang="ar"] .browse-sidebar h3 { font-family: var(--font-arabic); letter-spacing: 0.04em; }
+.browse-sidebar h3 i { color: var(--gold); font-size: 0.85rem; }
+.filter-group { margin-bottom: 20px; }
+.filter-group label {
+  display: block; font-size: 0.62rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.06em;
+  color: var(--text-light); margin-bottom: 6px;
+  font-family: var(--font-sans);
+}
+[lang="ar"] .filter-group label { font-family: var(--font-arabic); letter-spacing: 0.03em; }
+.filter-group select, .filter-group input {
+  width: 100%; padding: 8px 2px 10px;
+  border: none; border-bottom: 1px solid var(--border); border-radius: 0;
+  background: transparent; color: var(--text-primary);
+  font-size: 0.86rem; outline: none; transition: var(--transition);
+  font-family: var(--font-serif);
+}
+[lang="ar"] .filter-group select, [lang="ar"] .filter-group input { font-family: var(--font-arabic); }
+.filter-group select:focus, .filter-group input:focus {
+  border-color: var(--gold); background: transparent;
+  box-shadow: none;
+}
+.filter-actions { display: flex; flex-direction: column; gap: 10px; margin-top: 24px; }
+.filter-actions .btn { width: 100%; justify-content: center; padding: 10px 16px; font-size: 0.78rem; border-radius: var(--radius-full); }
+.filter-actions .btn-outline { background: transparent; box-shadow: none; }
+
+.browse-main { flex: 1; min-width: 0; }
+.browse-header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 18px; flex-wrap: wrap; gap: 10px;
+}
+.browse-header h1 {
+  font-size: 1.6rem; font-weight: 700; color: var(--black);
+  font-family: var(--font-serif);
+}
+[lang="ar"] .browse-header h1 { font-family: var(--font-arabic); }
+.browse-header p {
+  color: var(--text-secondary); font-size: 0.88rem;
+  font-family: var(--font-sans);
+}
+[lang="ar"] .browse-header p { font-family: var(--font-arabic); }
+.results-bar {
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 8px;
+  font-size: 0.82rem; color: var(--text-secondary);
+  padding: 8px 0 2px; border-bottom: 1px solid var(--border);
+  font-family: var(--font-sans);
+}
+[lang="ar"] .results-bar { font-family: var(--font-arabic); }
+.results-bar .sort-select {
+  padding: 5px 12px; border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--white); font-size: 0.78rem;
+  color: var(--text-primary); outline: none; cursor: pointer;
+  transition: var(--transition);
+  font-family: var(--font-sans);
+}
+[lang="ar"] .results-bar .sort-select { font-family: var(--font-arabic); }
+.results-bar .sort-select:focus { border-color: var(--gold); }
+
+.pagination {
+  display: flex; justify-content: center; gap: 5px; margin-top: 24px; flex-wrap: wrap;
+}
+.pagination button {
+  padding: 6px 12px; border: 1px solid var(--border);
+  border-radius: var(--radius-sm); background: var(--white);
+  cursor: pointer; transition: var(--transition); color: var(--text-primary);
+  font-size: 0.82rem; font-family: var(--font-sans);
+}
+[lang="ar"] .pagination button { font-family: var(--font-arabic); }
+.pagination button:hover, .pagination button.active {
+  background: var(--gold); color: white; border-color: var(--gold);
+}
+.pagination button:disabled { opacity: 0.4; cursor: not-allowed; }

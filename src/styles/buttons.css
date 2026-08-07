@@ -1,0 +1,46 @@
+/* ========================================================
+   BUTTONS
+   ======================================================== */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 10px 24px; border-radius: var(--radius-full); font-weight: 500; font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  transition: var(--transition); border: 1px solid var(--border);
+  background: var(--white); color: var(--text-primary);
+  text-decoration: none; cursor: pointer; box-shadow: var(--shadow-sm);
+  white-space: nowrap;
+  font-family: var(--font-sans);
+  min-height: 36px;
+}
+[lang="ar"] .btn { font-family: var(--font-arabic); }
+.btn:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.btn:active { transform: translateY(0); }
+.btn-primary {
+  background: var(--primary); border-color: var(--primary); color: var(--white);
+  font-weight: 600; letter-spacing: 0.04em;
+}
+.btn-primary:hover { background: #2a2826; border-color: #2a2826; box-shadow: var(--shadow-md); }
+[data-theme="dark"] .btn-primary { color: #1A1816; }
+[data-theme="dark"] .btn-primary:hover { background: #d4cfc8; border-color: #d4cfc8; }
+.btn-gold {
+  background: var(--gold); border-color: var(--gold); color: var(--white);
+  font-weight: 600; letter-spacing: 0.04em;
+}
+.btn-gold:hover { background: var(--gold-hover); border-color: var(--gold-hover); box-shadow: var(--shadow-glow); transform: translateY(-2px); }
+.btn-outline { background: transparent; border-color: var(--border); }
+.btn-outline:hover { background: rgba(26, 24, 22, 0.03); }
+.btn-sm { padding: 6px 16px; font-size: 0.72rem; min-height: 30px; }
+.btn-xs { padding: 4px 12px; font-size: 0.65rem; min-height: 24px; border-radius: var(--radius-full); }
+.btn-danger { background: #B34A4A; border-color: #B34A4A; color: white; }
+.btn-danger:hover { background: #8F3A3A; border-color: #8F3A3A; }
+.btn-success { background: #4A7A5A; border-color: #4A7A5A; color: #fff; }
+.btn-success:hover { background: #3A624A; border-color: #3A624A; }
+.btn-block { width: 100%; }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none !important; }
+
+/* Hero buttons */
+.hero-actions .btn {
+  padding: 12px 32px;
+  font-size: 0.88rem;
+  min-height: 44px;
+}
