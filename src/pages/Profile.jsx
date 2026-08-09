@@ -136,9 +136,17 @@ function Profile({ navigateTo }) {
         <button className="btn btn-outline btn-sm" onClick={() => navigateTo('/wishlist')}>
           <i className="fas fa-heart" style={{ color: 'var(--gold)' }}></i> {lang === 'ar' ? 'المفضلة' : 'Wishlist'} ({wishlistCount})
         </button>
-        <button className="btn btn-outline btn-sm" onClick={() => navigateTo('/post')}>
+        {/* <button className="btn btn-outline btn-sm" onClick={() => navigateTo('/post')}>
           <i className="fas fa-plus"></i> {lang === 'ar' ? 'نشر كتاب' : 'Post a book'}
-        </button>
+        </button> */}
+
+          <button 
+  className="btn btn-outline btn-sm" 
+  onClick={() => navigate('/post')}
+>
+  <i className="fas fa-plus"></i> {lang === 'ar' ? 'نشر كتاب' : 'Post a book'}
+</button>
+          
         <button className="btn btn-outline btn-sm" onClick={logout}>
           <i className="fas fa-sign-out-alt"></i> {lang === 'ar' ? 'تسجيل الخروج' : 'Log out'}
         </button>
