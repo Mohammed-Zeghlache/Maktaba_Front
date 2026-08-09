@@ -74,7 +74,7 @@ function Profile({ navigateTo }) {
 
     return (
       <div key={book.id} className="book-card" style={{ cursor: 'default' }}>
-        <div className="book-cover" onClick={() => navigateTo('book', book.id)}>
+        <div className="book-cover" onClick={() => navigateTo('/book', book.id)}>
           <img
             src={images[0] || 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=600&h=800&fit=crop'}
             alt={bookTitle(book, lang)}
@@ -98,7 +98,7 @@ function Profile({ navigateTo }) {
           {statusLabel}
         </span>
         <div style={{ display: 'flex', gap: '3px', marginTop: '6px' }}>
-          <button className="btn btn-outline btn-xs" onClick={() => navigateTo('post', book.id)}>
+          <button className="btn btn-outline btn-xs" onClick={() => navigateTo('/post', book.id)}>
             <i className="fas fa-pen"></i>
           </button>
           <button className="btn btn-danger btn-xs" onClick={() => handleDeleteBook(book.id)}>
@@ -133,10 +133,10 @@ function Profile({ navigateTo }) {
         <button className="btn btn-sm profile-tab-btn active">
           <i className="fas fa-list"></i> {lang === 'ar' ? 'منشوراتي' : 'My listings'} ({books.length})
         </button>
-        <button className="btn btn-outline btn-sm" onClick={() => navigateTo('wishlist')}>
+        <button className="btn btn-outline btn-sm" onClick={() => navigateTo('/wishlist')}>
           <i className="fas fa-heart" style={{ color: 'var(--gold)' }}></i> {lang === 'ar' ? 'المفضلة' : 'Wishlist'} ({wishlistCount})
         </button>
-        <button className="btn btn-outline btn-sm" onClick={() => navigateTo('post')}>
+        <button className="btn btn-outline btn-sm" onClick={() => navigateTo('/post')}>
           <i className="fas fa-plus"></i> {lang === 'ar' ? 'نشر كتاب' : 'Post a book'}
         </button>
         <button className="btn btn-outline btn-sm" onClick={logout}>
@@ -153,7 +153,7 @@ function Profile({ navigateTo }) {
           <div className="empty-state">
             <i className="fas fa-book"></i>
             {lang === 'ar' ? 'لا توجد منشورات حالياً.' : 'No listings yet.'}
-            <a onClick={() => navigateTo('post')} style={{ color: 'var(--gold)', cursor: 'pointer', display: 'block', marginTop: '8px' }}>
+            <a onClick={() => navigateTo('/post')} style={{ color: 'var(--gold)', cursor: 'pointer', display: 'block', marginTop: '8px' }}>
               {lang === 'ar' ? 'انشر كتاباً الآن' : 'Post a book now'}
             </a>
           </div>
