@@ -1073,3 +1073,83 @@ html[dir="rtl"] .toast { --slide-from: 100%; }
 .fa-spin {
   animation: spin 1s linear infinite;
 }
+
+
+
+
+
+
+
+
+/* ========================================================
+   WISHLIST
+   ======================================================== */
+.wishlist-header {
+  margin-bottom: 24px;
+}
+
+.wishlist-header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: var(--font-serif);
+  color: var(--black);
+}
+
+[lang="ar"] .wishlist-header h1 {
+  font-family: var(--font-arabic);
+}
+
+.wishlist-header h1 i {
+  margin-right: 10px;
+}
+
+.wishlist-header p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-top: 4px;
+}
+
+.wishlist-item {
+  position: relative;
+}
+
+.wishlist-item .book-card .wishlist-heart.active {
+  color: #e0455f;
+}
+
+/* Empty state for wishlist */
+.wishlist-empty {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.wishlist-empty i {
+  font-size: 3.5rem;
+  color: var(--text-light);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.wishlist-empty h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.wishlist-empty p {
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .wishlist-header h1 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .wishlist-header h1 {
+    font-size: 1.2rem;
+  }
+}
