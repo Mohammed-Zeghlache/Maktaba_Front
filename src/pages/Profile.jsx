@@ -147,7 +147,7 @@ function Profile({ navigateTo }) {
   <i className="fas fa-plus"></i> {lang === 'ar' ? 'نشر كتاب' : 'Post a book'}
 </button>
           
-        <button className="btn btn-outline btn-sm" onClick={logout}>
+        <button className="btn btn-outline btn-sm" onClick={() => navigateTo('/Login')}>
           <i className="fas fa-sign-out-alt"></i> {lang === 'ar' ? 'تسجيل الخروج' : 'Log out'}
         </button>
       </div>
