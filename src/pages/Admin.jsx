@@ -566,7 +566,7 @@ function Admin() {
             <button className="btn btn-outline btn-sm" onClick={goToHome}>
               <i className="fas fa-arrow-up-right-from-square"></i> {lang === 'ar' ? 'عرض الموقع' : 'View site'}
             </button>
-            <button className="btn btn-danger btn-sm" onClick={logout}>
+            <button className="btn btn-danger btn-sm" onClick={() => navigateTo('/Login')}>
               <i className="fas fa-sign-out-alt"></i> {lang === 'ar' ? 'خروج' : 'Log out'}
             </button>
           </div>
