@@ -725,7 +725,7 @@ function AdminLogin() {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            {/* placeholder="admin@maktaba.dz" */}
+            // placeholder="admin@maktaba.dz" 
             required
           />
         </div>
@@ -735,7 +735,7 @@ function AdminLogin() {
             type={showPassword ? 'text' : 'password'}
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            {/* placeholder="••••••••" */}
+            //placeholder="••••••••" 
             required
           />
           <button
