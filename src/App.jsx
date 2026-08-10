@@ -268,7 +268,7 @@ import Contact from './pages/Contact';
 import Admin from './pages/Admin';
 import PostBook from './pages/PostBook';
 import About from './pages/About';
-import wishlist from './pages/wishlist';
+import Wishlist from './pages/Wishlist';
 
 
 function AppRoutes() {
@@ -280,7 +280,7 @@ function AppRoutes() {
       <Route path="/book/:id" element={<BookDetails />} />
       <Route path="/post" element={<PostBook />} />
       <Route path="/profile" element={<Profile />} />
-      <Route path="/wishlist" element={<wishlist />} />
+      <Route path="/wishlist" element={<Wishlist />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/about" element={<About />} />
