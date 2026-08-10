@@ -140,7 +140,7 @@ function Contact() {
           <input
             type="email"
             id="email"
-            placeholder="you@university.dz"
+            {/* placeholder="you@university.dz" */}
             value={formData.email}
             onChange={handleChange}
             required
@@ -151,7 +151,7 @@ function Contact() {
           <input
             type="text"
             id="subject"
-            placeholder={lang === 'ar' ? 'كيف يمكننا مساعدتك؟' : 'How can we help?'}
+            {/* placeholder={lang === 'ar' ? 'كيف يمكننا مساعدتك؟' : 'How can we help?'} */}
             value={formData.subject}
             onChange={handleChange}
             required
