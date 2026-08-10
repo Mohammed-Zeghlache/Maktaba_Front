@@ -40,34 +40,402 @@ export async function apiCall(endpoint, options = {}) {
 }
 
 // Taxonomy data
+// export const UNIVERSITIES = [
+//   { key: 'algiers1', ar: 'جامعة الجزائر 1', en: 'University of Algiers 1', region: { ar: 'الجزائر', en: 'Algiers' } },
+//   { key: 'algiers2', ar: 'جامعة الجزائر 2', en: 'University of Algiers 2', region: { ar: 'الجزائر', en: 'Algiers' } },
+//   { key: 'algiers3', ar: 'جامعة الجزائر 3', en: 'University of Algiers 3', region: { ar: 'الجزائر', en: 'Algiers' } },
+//   { key: 'usthb', ar: 'جامعة هواري بومدين للعلوم والتكنولوجيا', en: 'USTHB - Houari Boumediene', region: { ar: 'الجزائر', en: 'Algiers' } },
+//   { key: 'constantine1', ar: 'جامعة منتوري قسنطينة', en: 'University of Constantine 1', region: { ar: 'قسنطينة', en: 'Constantine' } },
+//   { key: 'oran1', ar: 'جامعة وهران 1', en: 'University of Oran 1', region: { ar: 'وهران', en: 'Oran' } },
+//   { key: 'oran2', ar: 'جامعة وهران 2', en: 'University of Oran 2', region: { ar: 'وهران', en: 'Oran' } },
+//   { key: 'setif1', ar: 'جامعة سطيف 1', en: 'University of Setif 1', region: { ar: 'سطيف', en: 'Setif' } },
+//   { key: 'setif2', ar: 'جامعة سطيف 2', en: 'University of Setif 2', region: { ar: 'سطيف', en: 'Setif' } },
+//   { key: 'batna', ar: 'جامعة باتنة', en: 'University of Batna', region: { ar: 'باتنة', en: 'Batna' } },
+//   { key: 'annaba', ar: 'جامعة عنابة', en: 'University of Annaba', region: { ar: 'عنابة', en: 'Annaba' } },
+//   { key: 'tlemcen', ar: 'جامعة تلمسان', en: 'University of Tlemcen', region: { ar: 'تلمسان', en: 'Tlemcen' } },
+//   { key: 'biskra', ar: 'جامعة بسكرة', en: 'University of Biskra', region: { ar: 'بسكرة', en: 'Biskra' } },
+//   { key: 'tiziouzou', ar: 'جامعة تيزي وزو', en: 'University of Tizi Ouzou', region: { ar: 'تيزي وزو', en: 'Tizi Ouzou' } },
+//   { key: 'bejaia', ar: 'جامعة بجاية', en: 'University of Bejaia', region: { ar: 'بجاية', en: 'Bejaia' } },
+//   { key: 'skikda', ar: 'جامعة سكيكدة', en: 'University of Skikda', region: { ar: 'سكيكدة', en: 'Skikda' } },
+//   { key: 'oeb', ar: 'جامعة أم البواقي', en: 'University of Oum El Bouaghi', region: { ar: 'أم البواقي', en: 'Oum El Bouaghi' } },
+//   { key: 'khenchela', ar: 'جامعة خنشلة', en: 'University of Khenchela', region: { ar: 'خنشلة', en: 'Khenchela' } },
+//   { key: 'jijel', ar: 'جامعة جيجل', en: 'University of Jijel', region: { ar: 'جيجل', en: 'Jijel' } },
+//   { key: 'saida', ar: 'جامعة سعيدة', en: 'University of Saida', region: { ar: 'سعيدة', en: 'Saida' } },
+//   { key: 'ghardaia', ar: 'جامعة غرداية', en: 'University of Ghardaia', region: { ar: 'غرداية', en: 'Ghardaia' } },
+//   { key: 'tiaret', ar: 'جامعة تيارت', en: 'University of Tiaret', region: { ar: 'تيارت', en: 'Tiaret' } },
+//   { key: 'polytech', ar: 'المدرسة الوطنية المتعددة التقنيات', en: 'National Polytechnic School', region: { ar: 'الجزائر', en: 'Algiers' } },
+//   { key: 'blida', ar: 'جامعة البليدة', en: 'University of Blida', region: { ar: 'البليدة', en: 'Blida' } },
+//   { key: 'medea', ar: 'جامعة المدية', en: 'University of Medea', region: { ar: 'المدية', en: 'Medea' } },
+//   { key: 'aintemouchent', ar: 'جامعة عين تموشنت', en: 'University of Ain Temouchent', region: { ar: 'عين تموشنت', en: 'Ain Temouchent' } }
+// ];
+
+
+
+
 export const UNIVERSITIES = [
-  { key: 'algiers1', ar: 'جامعة الجزائر 1', en: 'University of Algiers 1', region: { ar: 'الجزائر', en: 'Algiers' } },
-  { key: 'algiers2', ar: 'جامعة الجزائر 2', en: 'University of Algiers 2', region: { ar: 'الجزائر', en: 'Algiers' } },
-  { key: 'algiers3', ar: 'جامعة الجزائر 3', en: 'University of Algiers 3', region: { ar: 'الجزائر', en: 'Algiers' } },
-  { key: 'usthb', ar: 'جامعة هواري بومدين للعلوم والتكنولوجيا', en: 'USTHB - Houari Boumediene', region: { ar: 'الجزائر', en: 'Algiers' } },
-  { key: 'constantine1', ar: 'جامعة منتوري قسنطينة', en: 'University of Constantine 1', region: { ar: 'قسنطينة', en: 'Constantine' } },
-  { key: 'oran1', ar: 'جامعة وهران 1', en: 'University of Oran 1', region: { ar: 'وهران', en: 'Oran' } },
-  { key: 'oran2', ar: 'جامعة وهران 2', en: 'University of Oran 2', region: { ar: 'وهران', en: 'Oran' } },
-  { key: 'setif1', ar: 'جامعة سطيف 1', en: 'University of Setif 1', region: { ar: 'سطيف', en: 'Setif' } },
-  { key: 'setif2', ar: 'جامعة سطيف 2', en: 'University of Setif 2', region: { ar: 'سطيف', en: 'Setif' } },
-  { key: 'batna', ar: 'جامعة باتنة', en: 'University of Batna', region: { ar: 'باتنة', en: 'Batna' } },
-  { key: 'annaba', ar: 'جامعة عنابة', en: 'University of Annaba', region: { ar: 'عنابة', en: 'Annaba' } },
-  { key: 'tlemcen', ar: 'جامعة تلمسان', en: 'University of Tlemcen', region: { ar: 'تلمسان', en: 'Tlemcen' } },
-  { key: 'biskra', ar: 'جامعة بسكرة', en: 'University of Biskra', region: { ar: 'بسكرة', en: 'Biskra' } },
-  { key: 'tiziouzou', ar: 'جامعة تيزي وزو', en: 'University of Tizi Ouzou', region: { ar: 'تيزي وزو', en: 'Tizi Ouzou' } },
-  { key: 'bejaia', ar: 'جامعة بجاية', en: 'University of Bejaia', region: { ar: 'بجاية', en: 'Bejaia' } },
-  { key: 'skikda', ar: 'جامعة سكيكدة', en: 'University of Skikda', region: { ar: 'سكيكدة', en: 'Skikda' } },
-  { key: 'oeb', ar: 'جامعة أم البواقي', en: 'University of Oum El Bouaghi', region: { ar: 'أم البواقي', en: 'Oum El Bouaghi' } },
-  { key: 'khenchela', ar: 'جامعة خنشلة', en: 'University of Khenchela', region: { ar: 'خنشلة', en: 'Khenchela' } },
-  { key: 'jijel', ar: 'جامعة جيجل', en: 'University of Jijel', region: { ar: 'جيجل', en: 'Jijel' } },
-  { key: 'saida', ar: 'جامعة سعيدة', en: 'University of Saida', region: { ar: 'سعيدة', en: 'Saida' } },
-  { key: 'ghardaia', ar: 'جامعة غرداية', en: 'University of Ghardaia', region: { ar: 'غرداية', en: 'Ghardaia' } },
-  { key: 'tiaret', ar: 'جامعة تيارت', en: 'University of Tiaret', region: { ar: 'تيارت', en: 'Tiaret' } },
-  { key: 'polytech', ar: 'المدرسة الوطنية المتعددة التقنيات', en: 'National Polytechnic School', region: { ar: 'الجزائر', en: 'Algiers' } },
-  { key: 'blida', ar: 'جامعة البليدة', en: 'University of Blida', region: { ar: 'البليدة', en: 'Blida' } },
-  { key: 'medea', ar: 'جامعة المدية', en: 'University of Medea', region: { ar: 'المدية', en: 'Medea' } },
-  { key: 'aintemouchent', ar: 'جامعة عين تموشنت', en: 'University of Ain Temouchent', region: { ar: 'عين تموشنت', en: 'Ain Temouchent' } }
+  {
+    key: 'adrar',
+    ar: 'جامعة أحمد دراية أدرار',
+    en: 'Ahmed Draia University of Adrar',
+    region: { ar: 'أدرار', en: 'Adrar' }
+  },
+  {
+    key: 'ain_temouchent',
+    ar: 'جامعة بلحاج بوشعيب عين تموشنت',
+    en: 'Belhadj Bouchaib University of Ain Temouchent',
+    region: { ar: 'عين تموشنت', en: 'Ain Temouchent' }
+  },
+  {
+    key: 'algiers1',
+    ar: 'جامعة الجزائر 1 بن يوسف بن خدة',
+    en: 'University of Algiers 1 Benyoucef Benkhedda',
+    region: { ar: 'الجزائر', en: 'Algiers' }
+  },
+  {
+    key: 'algiers2',
+    ar: 'جامعة الجزائر 2 أبو القاسم سعد الله',
+    en: 'University of Algiers 2 Abou El Kacem Saadallah',
+    region: { ar: 'الجزائر', en: 'Algiers' }
+  },
+  {
+    key: 'algiers3',
+    ar: 'جامعة الجزائر 3 إبراهيم سلطان شيبوط',
+    en: 'University of Algiers 3 Ibrahim Soltane Chaibout',
+    region: { ar: 'الجزائر', en: 'Algiers' }
+  },
+  {
+    key: 'annaba',
+    ar: 'جامعة باجي مختار عنابة',
+    en: 'Badji Mokhtar University of Annaba',
+    region: { ar: 'عنابة', en: 'Annaba' }
+  },
+  {
+    key: 'batna1',
+    ar: 'جامعة باتنة 1 الحاج لخضر',
+    en: 'University of Batna 1 Hadj Lakhdar',
+    region: { ar: 'باتنة', en: 'Batna' }
+  },
+  {
+    key: 'batna2',
+    ar: 'جامعة باتنة 2 مصطفى بن بولعيد',
+    en: 'University of Batna 2 Mostefa Ben Boulaid',
+    region: { ar: 'باتنة', en: 'Batna' }
+  },
+  {
+    key: 'bechar',
+    ar: 'جامعة طاهري محمد بشار',
+    en: 'Tahri Mohamed University of Bechar',
+    region: { ar: 'بشار', en: 'Bechar' }
+  },
+  {
+    key: 'bejaia',
+    ar: 'جامعة عبد الرحمان ميرة بجاية',
+    en: 'Abderrahmane Mira University of Bejaia',
+    region: { ar: 'بجاية', en: 'Bejaia' }
+  },
+  {
+    key: 'biskra',
+    ar: 'جامعة محمد خيضر بسكرة',
+    en: 'Mohamed Khider University of Biskra',
+    region: { ar: 'بسكرة', en: 'Biskra' }
+  },
+  {
+    key: 'blida1',
+    ar: 'جامعة سعد دحلب البليدة 1',
+    en: 'Saad Dahlab University of Blida 1',
+    region: { ar: 'البليدة', en: 'Blida' }
+  },
+  {
+    key: 'blida2',
+    ar: 'جامعة لونيسي علي البليدة 2',
+    en: 'Lounici Ali University of Blida 2',
+    region: { ar: 'البليدة', en: 'Blida' }
+  },
+  {
+    key: 'bordj_bou_arreridj',
+    ar: 'جامعة محمد البشير الإبراهيمي برج بوعريريج',
+    en: 'Mohamed El Bachir El Ibrahimi University of Bordj Bou Arreridj',
+    region: { ar: 'برج بوعريريج', en: 'Bordj Bou Arreridj' }
+  },
+  {
+    key: 'bouira',
+    ar: 'جامعة أكلي محند أولحاج البويرة',
+    en: 'Akli Mohand Oulhadj University of Bouira',
+    region: { ar: 'البويرة', en: 'Bouira' }
+  },
+  {
+    key: 'boumerdes',
+    ar: 'جامعة أمحمد بوقرة بومرداس',
+    en: 'M’Hamed Bougara University of Boumerdes',
+    region: { ar: 'بومرداس', en: 'Boumerdes' }
+  },
+  {
+    key: 'chlef',
+    ar: 'جامعة حسيبة بن بوعلي بالشلف',
+    en: 'Hassiba Benbouali University of Chlef',
+    region: { ar: 'الشلف', en: 'Chlef' }
+  },
+  {
+    key: 'constantine1',
+    ar: 'جامعة الإخوة منتوري قسنطينة 1',
+    en: 'University of Constantine 1 Brothers Mentouri',
+    region: { ar: 'قسنطينة', en: 'Constantine' }
+  },
+  {
+    key: 'constantine2',
+    ar: 'جامعة عبد الحميد مهري قسنطينة 2',
+    en: 'University of Constantine 2 Abdelhamid Mehri',
+    region: { ar: 'قسنطينة', en: 'Constantine' }
+  },
+  {
+    key: 'constantine3',
+    ar: 'جامعة صالح بوبنيدر قسنطينة 3',
+    en: 'University of Constantine 3 Salah Boubnider',
+    region: { ar: 'قسنطينة', en: 'Constantine' }
+  },
+  {
+    key: 'djelfa',
+    ar: 'جامعة زيان عاشور بالجلفة',
+    en: 'Ziane Achour University of Djelfa',
+    region: { ar: 'الجلفة', en: 'Djelfa' }
+  },
+  {
+    key: 'el_oued',
+    ar: 'جامعة الشهيد حمه لخضر الوادي',
+    en: 'Hamma Lakhdar University of El Oued',
+    region: { ar: 'الوادي', en: 'El Oued' }
+  },
+  {
+    key: 'el_tarf',
+    ar: 'جامعة الشاذلي بن جديد الطارف',
+    en: 'Chadli Bendjedid University of El Tarf',
+    region: { ar: 'الطارف', en: 'El Tarf' }
+  },
+  {
+    key: 'el_bayadh',
+    ar: 'جامعة البيض',
+    en: 'University of El Bayadh',
+    region: { ar: 'البيض', en: 'El Bayadh' }
+  },
+  {
+    key: 'ghardaia',
+    ar: 'جامعة غرداية',
+    en: 'University of Ghardaia',
+    region: { ar: 'غرداية', en: 'Ghardaia' }
+  },
+  {
+    key: 'guelma',
+    ar: 'جامعة 8 ماي 1945 قالمة',
+    en: '8 May 1945 University of Guelma',
+    region: { ar: 'قالمة', en: 'Guelma' }
+  },
+  {
+    key: 'jijel',
+    ar: 'جامعة محمد الصديق بن يحيى جيجل',
+    en: 'Mohamed Seddik Ben Yahia University of Jijel',
+    region: { ar: 'جيجل', en: 'Jijel' }
+  },
+  {
+    key: 'khenchela',
+    ar: 'جامعة عباس لغرور خنشلة',
+    en: 'Abbes Laghrour University of Khenchela',
+    region: { ar: 'خنشلة', en: 'Khenchela' }
+  },
+  {
+    key: 'khemis_miliana',
+    ar: 'جامعة الجيلالي بونعامة خميس مليانة',
+    en: 'Djilali Bounaama University of Khemis Miliana',
+    region: { ar: 'عين الدفلى', en: 'Ain Defla' }
+  },
+  {
+    key: 'laghouat',
+    ar: 'جامعة عمار ثليجي الأغواط',
+    en: 'Amar Telidji University of Laghouat',
+    region: { ar: 'الأغواط', en: 'Laghouat' }
+  },
+  {
+    key: 'mascara',
+    ar: 'جامعة مصطفى اسطمبولي معسكر',
+    en: 'Mustapha Stambouli University of Mascara',
+    region: { ar: 'معسكر', en: 'Mascara' }
+  },
+  {
+    key: 'medea',
+    ar: 'جامعة يحيى فارس بالمدية',
+    en: 'Yahia Fares University of Medea',
+    region: { ar: 'المدية', en: 'Medea' }
+  },
+  {
+    key: 'mila',
+    ar: 'جامعة عبد الحفيظ بوصوف ميلة',
+    en: 'Abdelhafid Boussouf University of Mila',
+    region: { ar: 'ميلة', en: 'Mila' }
+  },
+  {
+    key: 'msila',
+    ar: 'جامعة محمد بوضياف المسيلة',
+    en: 'Mohamed Boudiaf University of M’Sila',
+    region: { ar: 'المسيلة', en: 'M’Sila' }
+  },
+  {
+    key: 'mostaganem',
+    ar: 'جامعة عبد الحميد بن باديس مستغانم',
+    en: 'Abdelhamid Ibn Badis University of Mostaganem',
+    region: { ar: 'مستغانم', en: 'Mostaganem' }
+  },
+  {
+    key: 'naama',
+    ar: 'جامعة أحمد صالحي النعامة',
+    en: 'Ahmed Salhi University of Naama',
+    region: { ar: 'النعامة', en: 'Naama' }
+  },
+  {
+    key: 'oran1',
+    ar: 'جامعة أحمد بن بلة وهران 1',
+    en: 'Ahmed Ben Bella University of Oran 1',
+    region: { ar: 'وهران', en: 'Oran' }
+  },
+  {
+    key: 'oran2',
+    ar: 'جامعة محمد بن أحمد وهران 2',
+    en: 'Mohamed Ben Ahmed University of Oran 2',
+    region: { ar: 'وهران', en: 'Oran' }
+  },
+  {
+    key: 'ouargla',
+    ar: 'جامعة قاصدي مرباح ورقلة',
+    en: 'Kasdi Merbah University of Ouargla',
+    region: { ar: 'ورقلة', en: 'Ouargla' }
+  },
+  {
+    key: 'saida',
+    ar: 'جامعة الدكتور مولاي الطاهر سعيدة',
+    en: 'Dr. Moulay Tahar University of Saida',
+    region: { ar: 'سعيدة', en: 'Saida' }
+  },
+  {
+    key: 'setif1',
+    ar: 'جامعة فرحات عباس سطيف 1',
+    en: 'Ferhat Abbas University Setif 1',
+    region: { ar: 'سطيف', en: 'Setif' }
+  },
+  {
+    key: 'setif2',
+    ar: 'جامعة محمد لمين دباغين سطيف 2',
+    en: 'Mohamed Lamine Debaghine University Setif 2',
+    region: { ar: 'سطيف', en: 'Setif' }
+  },
+  {
+    key: 'sidi_bel_abbes',
+    ar: 'جامعة جيلالي ليابس سيدي بلعباس',
+    en: 'Djillali Liabes University of Sidi Bel Abbes',
+    region: { ar: 'سيدي بلعباس', en: 'Sidi Bel Abbes' }
+  },
+  {
+    key: 'skikda',
+    ar: 'جامعة 20 أوت 1955 سكيكدة',
+    en: '20 August 1955 University of Skikda',
+    region: { ar: 'سكيكدة', en: 'Skikda' }
+  },
+  {
+    key: 'soukahras',
+    ar: 'جامعة محمد الشريف مساعدية سوق أهراس',
+    en: 'Mohamed Cherif Messaadia University of Souk Ahras',
+    region: { ar: 'سوق أهراس', en: 'Souk Ahras' }
+  },
+  {
+    key: 'tamanrasset',
+    ar: 'جامعة تمنراست',
+    en: 'University of Tamanrasset',
+    region: { ar: 'تمنراست', en: 'Tamanrasset' }
+  },
+  {
+    key: 'tebessa',
+    ar: 'جامعة العربي التبسي تبسة',
+    en: 'Larbi Tebessi University of Tebessa',
+    region: { ar: 'تبسة', en: 'Tebessa' }
+  },
+  {
+    key: 'tindouf',
+    ar: 'جامعة تندوف علي كافي',
+    en: 'Ali Kafi University of Tindouf',
+    region: { ar: 'تندوف', en: 'Tindouf' }
+  },
+  {
+    key: 'tissemsilt',
+    ar: 'جامعة تيسمسيلت',
+    en: 'University of Tissemsilt',
+    region: { ar: 'تيسمسيلت', en: 'Tissemsilt' }
+  },
+  {
+    key: 'tizi_ouzou',
+    ar: 'جامعة مولود معمري تيزي وزو',
+    en: 'Mouloud Mammeri University of Tizi Ouzou',
+    region: { ar: 'تيزي وزو', en: 'Tizi Ouzou' }
+  },
+  {
+    key: 'tlemcen',
+    ar: 'جامعة أبو بكر بلقايد تلمسان',
+    en: 'Abou Bekr Belkaid University of Tlemcen',
+    region: { ar: 'تلمسان', en: 'Tlemcen' }
+  },
+  {
+    key: 'tiaret',
+    ar: 'جامعة ابن خلدون تيارت',
+    en: 'Ibn Khaldoun University of Tiaret',
+    region: { ar: 'تيارت', en: 'Tiaret' }
+  },
+  {
+    key: 'tipaza',
+    ar: 'جامعة عبد الله مرسلي تيبازة',
+    en: 'Abdallah Morsli University of Tipaza',
+    region: { ar: 'تيبازة', en: 'Tipaza' }
+  },
+  {
+    key: 'usthb',
+    ar: 'جامعة هواري بومدين للعلوم والتكنولوجيا',
+    en: 'USTHB - Houari Boumediene University',
+    region: { ar: 'الجزائر', en: 'Algiers' }
+  },
+  {
+    key: 'usto',
+    ar: 'جامعة العلوم والتكنولوجيا محمد بوضياف وهران',
+    en: 'Mohamed Boudiaf University of Science and Technology of Oran',
+    region: { ar: 'وهران', en: 'Oran' }
+  },
+  {
+    key: 'constantine_islamic',
+    ar: 'جامعة الأمير عبد القادر للعلوم الإسلامية',
+    en: 'Emir Abdelkader University of Islamic Sciences',
+    region: { ar: 'قسنطينة', en: 'Constantine' }
+  },
+  {
+    key: 'university_formation_continue',
+    ar: 'جامعة التكوين المتواصل',
+    en: 'University of Continuing Education',
+    region: { ar: 'الجزائر', en: 'Algiers' }
+  },
+  {
+    key: 'relizane',
+    ar: 'جامعة غليزان',
+    en: 'University of Relizane',
+    region: { ar: 'غليزان', en: 'Relizane' }
+  },
+  {
+    key: 'ouargla',
+    ar: 'جامعة قاصدي مرباح ورقلة',
+    en: 'Kasdi Merbah University of Ouargla',
+    region: { ar: 'ورقلة', en: 'Ouargla' }
+  }
 ];
+
+
+
+
+
+
+
+
 
 export const MAJORS = [
   { key: 'medicine', ar: 'طب', en: 'Medicine' },
