@@ -278,7 +278,7 @@ function AppRoutes() {
       <Route path="/book/:id" element={<BookDetails />} />
       <Route path="/post" element={<PostBook />} />
       <Route path="/profile" element={<Profile />} />
-      <Route path="/wishlist" element={<Browse />} />
+      <Route path="/wishlist" element={<wishlist />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/about" element={<About />} />
