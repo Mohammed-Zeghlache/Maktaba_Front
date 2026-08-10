@@ -1,9 +1,11 @@
 /* ========================================================
    MAKTABA — Luxury Serif Design · Refined
    ======================================================== */
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 img { max-width: 100%; height: auto; display: block; }
 
+@import './wishlist.css';
 :root {
   --white: #FFFFFF;
   --off-white: #F6F4F0;
