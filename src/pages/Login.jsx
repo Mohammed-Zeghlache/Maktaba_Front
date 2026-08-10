@@ -39,7 +39,7 @@ function Login() {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="you@gmail.com"
+             // placeholder="you@gmail.com"
               required
             />
           </div>
@@ -49,7 +49,7 @@ function Login() {
               type={showPassword ? 'text' : 'password'}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder="••••••••"
+             // placeholder="••••••••"
               required
             />
             <button
