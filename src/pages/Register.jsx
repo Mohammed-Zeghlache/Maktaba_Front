@@ -95,7 +95,7 @@ function Register() {
               id="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="you@university.dz"
+            //  placeholder="you@university.dz"
               required
             />
           </div>
@@ -106,7 +106,7 @@ function Register() {
               id="phone"
               value={formData.phone}
               onChange={handleChange}
-              placeholder="+213 555 55 55 55"
+            //  placeholder="+213 555 55 55 55"
               required
             />
           </div>
@@ -117,7 +117,7 @@ function Register() {
               id="password"
               value={formData.password}
               onChange={handleChange}
-              placeholder="••••••••"
+            //  placeholder="••••••••"
               required
             />
             <button
@@ -135,7 +135,7 @@ function Register() {
               id="confirmPassword"
               value={formData.confirmPassword}
               onChange={handleChange}
-              placeholder="••••••••"
+            //  placeholder="••••••••"
               required
             />
             <button
