@@ -437,35 +437,189 @@ export const UNIVERSITIES = [
 
 
 
+// export const MAJORS = [
+//   { key: 'medicine', ar: 'طب', en: 'Medicine' },
+//   { key: 'pharmacy', ar: 'صيدلة', en: 'Pharmacy' },
+//   { key: 'dentistry', ar: 'طب أسنان', en: 'Dentistry' },
+//   { key: 'medsci', ar: 'علوم طبية', en: 'Medical Sciences' },
+//   { key: 'civileng', ar: 'هندسة مدنية', en: 'Civil Engineering' },
+//   { key: 'mecheng', ar: 'هندسة ميكانيكية', en: 'Mechanical Engineering' },
+//   { key: 'eleceng', ar: 'هندسة كهربائية', en: 'Electrical Engineering' },
+//   { key: 'energyeng', ar: 'هندسة طاقة', en: 'Energy Engineering' },
+//   { key: 'cs', ar: 'علم الحاسوب', en: 'Computer Science' },
+//   { key: 'math', ar: 'رياضيات', en: 'Mathematics' },
+//   { key: 'physics', ar: 'فيزياء', en: 'Physics' },
+//   { key: 'chem', ar: 'كيمياء', en: 'Chemistry' },
+//   { key: 'matsci', ar: 'علوم المادة', en: 'Materials Science' },
+//   { key: 'econ', ar: 'اقتصاد', en: 'Economics' },
+//   { key: 'business', ar: 'علوم تجارية', en: 'Business Studies' },
+//   { key: 'finance', ar: 'علوم مالية', en: 'Finance' },
+//   { key: 'econsci', ar: 'علوم اقتصادية', en: 'Economic Sciences' },
+//   { key: 'law', ar: 'قانون', en: 'Law' },
+//   { key: 'polsci', ar: 'علوم سياسية', en: 'Political Science' },
+//   { key: 'pubadmin', ar: 'علوم إدارية', en: 'Public Administration' },
+//   { key: 'forlang', ar: 'لغات أجنبية', en: 'Foreign Languages' },
+//   { key: 'arabiclit', ar: 'آداب عربية', en: 'Arabic Literature' },
+//   { key: 'islamic', ar: 'علوم إسلامية', en: 'Islamic Studies' },
+//   { key: 'philosophy', ar: 'فلسفة', en: 'Philosophy' },
+//   { key: 'softeng', ar: 'إعلام آلي', en: 'Software Engineering' },
+//   { key: 'automation', ar: 'تحكم آلي', en: 'Automation' },
+//   { key: 'telecom', ar: 'اتصالات', en: 'Telecommunications' }
+// ];
+
+
+
+
+
+
+
+
 export const MAJORS = [
+  // 🩺 Health & Medical Sciences
   { key: 'medicine', ar: 'طب', en: 'Medicine' },
+  { key: 'dentistry', ar: 'طب الأسنان', en: 'Dentistry' },
   { key: 'pharmacy', ar: 'صيدلة', en: 'Pharmacy' },
-  { key: 'dentistry', ar: 'طب أسنان', en: 'Dentistry' },
-  { key: 'medsci', ar: 'علوم طبية', en: 'Medical Sciences' },
-  { key: 'civileng', ar: 'هندسة مدنية', en: 'Civil Engineering' },
-  { key: 'mecheng', ar: 'هندسة ميكانيكية', en: 'Mechanical Engineering' },
-  { key: 'eleceng', ar: 'هندسة كهربائية', en: 'Electrical Engineering' },
-  { key: 'energyeng', ar: 'هندسة طاقة', en: 'Energy Engineering' },
-  { key: 'cs', ar: 'علم الحاسوب', en: 'Computer Science' },
-  { key: 'math', ar: 'رياضيات', en: 'Mathematics' },
-  { key: 'physics', ar: 'فيزياء', en: 'Physics' },
-  { key: 'chem', ar: 'كيمياء', en: 'Chemistry' },
-  { key: 'matsci', ar: 'علوم المادة', en: 'Materials Science' },
-  { key: 'econ', ar: 'اقتصاد', en: 'Economics' },
-  { key: 'business', ar: 'علوم تجارية', en: 'Business Studies' },
-  { key: 'finance', ar: 'علوم مالية', en: 'Finance' },
-  { key: 'econsci', ar: 'علوم اقتصادية', en: 'Economic Sciences' },
-  { key: 'law', ar: 'قانون', en: 'Law' },
-  { key: 'polsci', ar: 'علوم سياسية', en: 'Political Science' },
-  { key: 'pubadmin', ar: 'علوم إدارية', en: 'Public Administration' },
-  { key: 'forlang', ar: 'لغات أجنبية', en: 'Foreign Languages' },
-  { key: 'arabiclit', ar: 'آداب عربية', en: 'Arabic Literature' },
-  { key: 'islamic', ar: 'علوم إسلامية', en: 'Islamic Studies' },
-  { key: 'philosophy', ar: 'فلسفة', en: 'Philosophy' },
-  { key: 'softeng', ar: 'إعلام آلي', en: 'Software Engineering' },
-  { key: 'automation', ar: 'تحكم آلي', en: 'Automation' },
-  { key: 'telecom', ar: 'اتصالات', en: 'Telecommunications' }
+  { key: 'veterinary', ar: 'الطب البيطري', en: 'Veterinary Medicine' },
+  { key: 'medical_sciences', ar: 'العلوم الطبية', en: 'Medical Sciences' },
+  { key: 'nursing', ar: 'علوم التمريض', en: 'Nursing Sciences' },
+  { key: 'public_health', ar: 'الصحة العمومية', en: 'Public Health' },
+
+  // 💻 Computer Science & Technology
+  { key: 'computer_science', ar: 'الإعلام الآلي', en: 'Computer Science' },
+  { key: 'software_engineering', ar: 'هندسة البرمجيات', en: 'Software Engineering' },
+  { key: 'information_systems', ar: 'نظم المعلومات', en: 'Information Systems' },
+  { key: 'artificial_intelligence', ar: 'الذكاء الاصطناعي', en: 'Artificial Intelligence' },
+  { key: 'data_science', ar: 'علم البيانات', en: 'Data Science' },
+  { key: 'cybersecurity', ar: 'الأمن السيبراني', en: 'Cybersecurity' },
+  { key: 'information_technology', ar: 'تكنولوجيا المعلومات', en: 'Information Technology' },
+  { key: 'computer_networks', ar: 'شبكات الحاسوب', en: 'Computer Networks' },
+
+  // ⚙️ Engineering
+  { key: 'civil_engineering', ar: 'الهندسة المدنية', en: 'Civil Engineering' },
+  { key: 'mechanical_engineering', ar: 'الهندسة الميكانيكية', en: 'Mechanical Engineering' },
+  { key: 'electrical_engineering', ar: 'الهندسة الكهربائية', en: 'Electrical Engineering' },
+  { key: 'industrial_engineering', ar: 'الهندسة الصناعية', en: 'Industrial Engineering' },
+  { key: 'process_engineering', ar: 'هندسة الطرائق', en: 'Process Engineering' },
+  { key: 'chemical_engineering', ar: 'الهندسة الكيميائية', en: 'Chemical Engineering' },
+  { key: 'energy_engineering', ar: 'هندسة الطاقة', en: 'Energy Engineering' },
+  { key: 'mining_engineering', ar: 'هندسة المناجم', en: 'Mining Engineering' },
+  { key: 'materials_engineering', ar: 'هندسة المواد', en: 'Materials Engineering' },
+  { key: 'automation', ar: 'التحكم الآلي', en: 'Automation and Control' },
+  { key: 'electromechanical', ar: 'الهندسة الكهروميكانيكية', en: 'Electromechanical Engineering' },
+  { key: 'telecommunications', ar: 'الاتصالات', en: 'Telecommunications' },
+  { key: 'electronics', ar: 'الإلكترونيات', en: 'Electronics' },
+  { key: 'optics', ar: 'البصريات', en: 'Optics' },
+
+  // 🔬 Exact Sciences
+  { key: 'mathematics', ar: 'الرياضيات', en: 'Mathematics' },
+  { key: 'applied_mathematics', ar: 'الرياضيات التطبيقية', en: 'Applied Mathematics' },
+  { key: 'physics', ar: 'الفيزياء', en: 'Physics' },
+  { key: 'applied_physics', ar: 'الفيزياء التطبيقية', en: 'Applied Physics' },
+  { key: 'chemistry', ar: 'الكيمياء', en: 'Chemistry' },
+  { key: 'applied_chemistry', ar: 'الكيمياء التطبيقية', en: 'Applied Chemistry' },
+  { key: 'materials_science', ar: 'علوم المادة', en: 'Materials Science' },
+
+  // 🌱 Natural & Life Sciences
+  { key: 'biology', ar: 'علوم الطبيعة والحياة', en: 'Natural and Life Sciences' },
+  { key: 'biochemistry', ar: 'الكيمياء الحيوية', en: 'Biochemistry' },
+  { key: 'microbiology', ar: 'علم الأحياء الدقيقة', en: 'Microbiology' },
+  { key: 'biotechnology', ar: 'التكنولوجيا الحيوية', en: 'Biotechnology' },
+  { key: 'ecology', ar: 'علم البيئة', en: 'Ecology' },
+  { key: 'food_science', ar: 'علوم الأغذية', en: 'Food Science' },
+  { key: 'agronomy', ar: 'العلوم الزراعية', en: 'Agricultural Sciences' },
+  { key: 'forestry', ar: 'علوم الغابات', en: 'Forestry' },
+  { key: 'fisheries', ar: 'علوم الصيد البحري', en: 'Fisheries Science' },
+
+  // 💰 Economics & Management
+  { key: 'economics', ar: 'العلوم الاقتصادية', en: 'Economic Sciences' },
+  { key: 'commercial_sciences', ar: 'العلوم التجارية', en: 'Commercial Sciences' },
+  { key: 'management', ar: 'علوم التسيير', en: 'Management Sciences' },
+  { key: 'finance', ar: 'العلوم المالية والمحاسبة', en: 'Finance and Accounting' },
+  { key: 'accounting', ar: 'المحاسبة', en: 'Accounting' },
+  { key: 'marketing', ar: 'التسويق', en: 'Marketing' },
+  { key: 'business_management', ar: 'إدارة الأعمال', en: 'Business Administration' },
+  { key: 'human_resources', ar: 'تسيير الموارد البشرية', en: 'Human Resources Management' },
+  { key: 'international_economics', ar: 'الاقتصاد الدولي', en: 'International Economics' },
+
+  // ⚖️ Law & Political Sciences
+  { key: 'law', ar: 'الحقوق', en: 'Law' },
+  { key: 'political_science', ar: 'العلوم السياسية', en: 'Political Science' },
+  { key: 'international_relations', ar: 'العلاقات الدولية', en: 'International Relations' },
+  { key: 'public_administration', ar: 'الإدارة العمومية', en: 'Public Administration' },
+
+  // 📚 Humanities & Languages
+  { key: 'arabic_language', ar: 'اللغة والأدب العربي', en: 'Arabic Language and Literature' },
+  { key: 'french', ar: 'اللغة الفرنسية', en: 'French Language' },
+  { key: 'english', ar: 'اللغة الإنجليزية', en: 'English Language' },
+  { key: 'german', ar: 'اللغة الألمانية', en: 'German Language' },
+  { key: 'spanish', ar: 'اللغة الإسبانية', en: 'Spanish Language' },
+  { key: 'translation', ar: 'الترجمة', en: 'Translation' },
+  { key: 'foreign_languages', ar: 'اللغات الأجنبية', en: 'Foreign Languages' },
+  { key: 'literature', ar: 'الآداب', en: 'Literature' },
+  { key: 'philosophy', ar: 'الفلسفة', en: 'Philosophy' },
+  { key: 'history', ar: 'التاريخ', en: 'History' },
+  { key: 'geography', ar: 'الجغرافيا', en: 'Geography' },
+  { key: 'archaeology', ar: 'علم الآثار', en: 'Archaeology' },
+
+  // 🧠 Social Sciences
+  { key: 'psychology', ar: 'علم النفس', en: 'Psychology' },
+  { key: 'sociology', ar: 'علم الاجتماع', en: 'Sociology' },
+  { key: 'education_sciences', ar: 'علوم التربية', en: 'Educational Sciences' },
+  { key: 'library_science', ar: 'علم المكتبات والمعلومات', en: 'Library and Information Science' },
+  { key: 'communication', ar: 'علوم الإعلام والاتصال', en: 'Communication and Media Sciences' },
+  { key: 'information_communication', ar: 'الإعلام والاتصال', en: 'Information and Communication' },
+
+  // 🕌 Islamic Sciences
+  { key: 'islamic_sciences', ar: 'العلوم الإسلامية', en: 'Islamic Sciences' },
+  { key: 'islamic_law', ar: 'الشريعة الإسلامية', en: 'Islamic Law' },
+  { key: 'quranic_sciences', ar: 'علوم القرآن', en: 'Quranic Sciences' },
+
+  // 🏗️ Architecture & Urbanism
+  { key: 'architecture', ar: 'الهندسة المعمارية', en: 'Architecture' },
+  { key: 'urbanism', ar: 'العمران', en: 'Urban Planning' },
+  { key: 'landscape_architecture', ar: 'هندسة المناظر الطبيعية', en: 'Landscape Architecture' },
+
+  // 🎨 Arts & Design
+  { key: 'fine_arts', ar: 'الفنون الجميلة', en: 'Fine Arts' },
+  { key: 'graphic_design', ar: 'التصميم الجرافيكي', en: 'Graphic Design' },
+  { key: 'visual_arts', ar: 'الفنون البصرية', en: 'Visual Arts' },
+  { key: 'music', ar: 'الموسيقى', en: 'Music' },
+
+  // 🏃 Sports
+  { key: 'sports_sciences', ar: 'علوم وتقنيات النشاطات البدنية والرياضية', en: 'Sports Sciences and Physical Activities' },
+
+  // 🌍 Earth & Environmental Sciences
+  { key: 'geology', ar: 'علوم الأرض', en: 'Earth Sciences' },
+  { key: 'geophysics', ar: 'الجيوفيزياء', en: 'Geophysics' },
+  { key: 'environmental_sciences', ar: 'العلوم البيئية', en: 'Environmental Sciences' },
+  { key: 'hydraulics', ar: 'الهندسة الهيدروليكية', en: 'Hydraulics' },
+
+  // 🏨 Tourism & Hospitality
+  { key: 'tourism', ar: 'السياحة', en: 'Tourism' },
+  { key: 'hotel_management', ar: 'الفندقة', en: 'Hotel Management' },
+
+  // 🚢 Transport & Logistics
+  { key: 'transportation', ar: 'النقل', en: 'Transportation' },
+  { key: 'logistics', ar: 'اللوجستيك', en: 'Logistics' },
+
+  // 🧑‍🏫 Education
+  { key: 'physical_education', ar: 'التربية البدنية والرياضية', en: 'Physical Education' },
+  { key: 'teacher_education', ar: 'علوم التربية والتعليم', en: 'Teacher Education' }
 ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 export const CONDITIONS = [
   { key: 'new', ar: 'جديد', en: 'New' },
@@ -488,6 +642,8 @@ export const YEARS = [
   { key: 'y2', ar: 'السنة الثانية', en: '2nd Year' },
   { key: 'y3', ar: 'السنة الثالثة', en: '3rd Year' },
   { key: 'y4', ar: 'السنة الرابعة', en: '4th Year' }
+  { key: 'y5', ar: 'السنة الخامسة', en: '5th Year' }
+
 ];
 
 export const CURRENCY = { ar: 'دج', en: 'DZD' };
