@@ -641,7 +641,7 @@ export const YEARS = [
   { key: 'y1', ar: 'السنة الأولى', en: '1st Year' },
   { key: 'y2', ar: 'السنة الثانية', en: '2nd Year' },
   { key: 'y3', ar: 'السنة الثالثة', en: '3rd Year' },
-  { key: 'y4', ar: 'السنة الرابعة', en: '4th Year' }
+  { key: 'y4', ar: 'السنة الرابعة', en: '4th Year' },
   { key: 'y5', ar: 'السنة الخامسة', en: '5th Year' }
 
 ];
