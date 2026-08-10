@@ -268,6 +268,8 @@ import Contact from './pages/Contact';
 import Admin from './pages/Admin';
 import PostBook from './pages/PostBook';
 import About from './pages/About';
+import About from './pages/wishlist';
+
 
 function AppRoutes() {
   return (
