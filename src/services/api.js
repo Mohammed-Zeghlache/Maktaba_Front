@@ -39,39 +39,6 @@ export async function apiCall(endpoint, options = {}) {
   return data;
 }
 
-// Taxonomy data
-// export const UNIVERSITIES = [
-//   { key: 'algiers1', ar: 'جامعة الجزائر 1', en: 'University of Algiers 1', region: { ar: 'الجزائر', en: 'Algiers' } },
-//   { key: 'algiers2', ar: 'جامعة الجزائر 2', en: 'University of Algiers 2', region: { ar: 'الجزائر', en: 'Algiers' } },
-//   { key: 'algiers3', ar: 'جامعة الجزائر 3', en: 'University of Algiers 3', region: { ar: 'الجزائر', en: 'Algiers' } },
-//   { key: 'usthb', ar: 'جامعة هواري بومدين للعلوم والتكنولوجيا', en: 'USTHB - Houari Boumediene', region: { ar: 'الجزائر', en: 'Algiers' } },
-//   { key: 'constantine1', ar: 'جامعة منتوري قسنطينة', en: 'University of Constantine 1', region: { ar: 'قسنطينة', en: 'Constantine' } },
-//   { key: 'oran1', ar: 'جامعة وهران 1', en: 'University of Oran 1', region: { ar: 'وهران', en: 'Oran' } },
-//   { key: 'oran2', ar: 'جامعة وهران 2', en: 'University of Oran 2', region: { ar: 'وهران', en: 'Oran' } },
-//   { key: 'setif1', ar: 'جامعة سطيف 1', en: 'University of Setif 1', region: { ar: 'سطيف', en: 'Setif' } },
-//   { key: 'setif2', ar: 'جامعة سطيف 2', en: 'University of Setif 2', region: { ar: 'سطيف', en: 'Setif' } },
-//   { key: 'batna', ar: 'جامعة باتنة', en: 'University of Batna', region: { ar: 'باتنة', en: 'Batna' } },
-//   { key: 'annaba', ar: 'جامعة عنابة', en: 'University of Annaba', region: { ar: 'عنابة', en: 'Annaba' } },
-//   { key: 'tlemcen', ar: 'جامعة تلمسان', en: 'University of Tlemcen', region: { ar: 'تلمسان', en: 'Tlemcen' } },
-//   { key: 'biskra', ar: 'جامعة بسكرة', en: 'University of Biskra', region: { ar: 'بسكرة', en: 'Biskra' } },
-//   { key: 'tiziouzou', ar: 'جامعة تيزي وزو', en: 'University of Tizi Ouzou', region: { ar: 'تيزي وزو', en: 'Tizi Ouzou' } },
-//   { key: 'bejaia', ar: 'جامعة بجاية', en: 'University of Bejaia', region: { ar: 'بجاية', en: 'Bejaia' } },
-//   { key: 'skikda', ar: 'جامعة سكيكدة', en: 'University of Skikda', region: { ar: 'سكيكدة', en: 'Skikda' } },
-//   { key: 'oeb', ar: 'جامعة أم البواقي', en: 'University of Oum El Bouaghi', region: { ar: 'أم البواقي', en: 'Oum El Bouaghi' } },
-//   { key: 'khenchela', ar: 'جامعة خنشلة', en: 'University of Khenchela', region: { ar: 'خنشلة', en: 'Khenchela' } },
-//   { key: 'jijel', ar: 'جامعة جيجل', en: 'University of Jijel', region: { ar: 'جيجل', en: 'Jijel' } },
-//   { key: 'saida', ar: 'جامعة سعيدة', en: 'University of Saida', region: { ar: 'سعيدة', en: 'Saida' } },
-//   { key: 'ghardaia', ar: 'جامعة غرداية', en: 'University of Ghardaia', region: { ar: 'غرداية', en: 'Ghardaia' } },
-//   { key: 'tiaret', ar: 'جامعة تيارت', en: 'University of Tiaret', region: { ar: 'تيارت', en: 'Tiaret' } },
-//   { key: 'polytech', ar: 'المدرسة الوطنية المتعددة التقنيات', en: 'National Polytechnic School', region: { ar: 'الجزائر', en: 'Algiers' } },
-//   { key: 'blida', ar: 'جامعة البليدة', en: 'University of Blida', region: { ar: 'البليدة', en: 'Blida' } },
-//   { key: 'medea', ar: 'جامعة المدية', en: 'University of Medea', region: { ar: 'المدية', en: 'Medea' } },
-//   { key: 'aintemouchent', ar: 'جامعة عين تموشنت', en: 'University of Ain Temouchent', region: { ar: 'عين تموشنت', en: 'Ain Temouchent' } }
-// ];
-
-
-
-
 export const UNIVERSITIES = [
   {
     key: 'adrar',
@@ -437,45 +404,11 @@ export const UNIVERSITIES = [
 
 
 
-// export const MAJORS = [
-//   { key: 'medicine', ar: 'طب', en: 'Medicine' },
-//   { key: 'pharmacy', ar: 'صيدلة', en: 'Pharmacy' },
-//   { key: 'dentistry', ar: 'طب أسنان', en: 'Dentistry' },
-//   { key: 'medsci', ar: 'علوم طبية', en: 'Medical Sciences' },
-//   { key: 'civileng', ar: 'هندسة مدنية', en: 'Civil Engineering' },
-//   { key: 'mecheng', ar: 'هندسة ميكانيكية', en: 'Mechanical Engineering' },
-//   { key: 'eleceng', ar: 'هندسة كهربائية', en: 'Electrical Engineering' },
-//   { key: 'energyeng', ar: 'هندسة طاقة', en: 'Energy Engineering' },
-//   { key: 'cs', ar: 'علم الحاسوب', en: 'Computer Science' },
-//   { key: 'math', ar: 'رياضيات', en: 'Mathematics' },
-//   { key: 'physics', ar: 'فيزياء', en: 'Physics' },
-//   { key: 'chem', ar: 'كيمياء', en: 'Chemistry' },
-//   { key: 'matsci', ar: 'علوم المادة', en: 'Materials Science' },
-//   { key: 'econ', ar: 'اقتصاد', en: 'Economics' },
-//   { key: 'business', ar: 'علوم تجارية', en: 'Business Studies' },
-//   { key: 'finance', ar: 'علوم مالية', en: 'Finance' },
-//   { key: 'econsci', ar: 'علوم اقتصادية', en: 'Economic Sciences' },
-//   { key: 'law', ar: 'قانون', en: 'Law' },
-//   { key: 'polsci', ar: 'علوم سياسية', en: 'Political Science' },
-//   { key: 'pubadmin', ar: 'علوم إدارية', en: 'Public Administration' },
-//   { key: 'forlang', ar: 'لغات أجنبية', en: 'Foreign Languages' },
-//   { key: 'arabiclit', ar: 'آداب عربية', en: 'Arabic Literature' },
-//   { key: 'islamic', ar: 'علوم إسلامية', en: 'Islamic Studies' },
-//   { key: 'philosophy', ar: 'فلسفة', en: 'Philosophy' },
-//   { key: 'softeng', ar: 'إعلام آلي', en: 'Software Engineering' },
-//   { key: 'automation', ar: 'تحكم آلي', en: 'Automation' },
-//   { key: 'telecom', ar: 'اتصالات', en: 'Telecommunications' }
-// ];
-
-
-
-
-
 
 
 
 export const MAJORS = [
-  // 🩺 Health & Medical Sciences
+  //  Health & Medical Sciences
   { key: 'medicine', ar: 'طب', en: 'Medicine' },
   { key: 'dentistry', ar: 'طب الأسنان', en: 'Dentistry' },
   { key: 'pharmacy', ar: 'صيدلة', en: 'Pharmacy' },
@@ -484,7 +417,7 @@ export const MAJORS = [
   { key: 'nursing', ar: 'علوم التمريض', en: 'Nursing Sciences' },
   { key: 'public_health', ar: 'الصحة العمومية', en: 'Public Health' },
 
-  // 💻 Computer Science & Technology
+  //  Computer Science & Technology
   { key: 'computer_science', ar: 'الإعلام الآلي', en: 'Computer Science' },
   { key: 'software_engineering', ar: 'هندسة البرمجيات', en: 'Software Engineering' },
   { key: 'information_systems', ar: 'نظم المعلومات', en: 'Information Systems' },
@@ -494,7 +427,7 @@ export const MAJORS = [
   { key: 'information_technology', ar: 'تكنولوجيا المعلومات', en: 'Information Technology' },
   { key: 'computer_networks', ar: 'شبكات الحاسوب', en: 'Computer Networks' },
 
-  // ⚙️ Engineering
+  //  Engineering
   { key: 'civil_engineering', ar: 'الهندسة المدنية', en: 'Civil Engineering' },
   { key: 'mechanical_engineering', ar: 'الهندسة الميكانيكية', en: 'Mechanical Engineering' },
   { key: 'electrical_engineering', ar: 'الهندسة الكهربائية', en: 'Electrical Engineering' },
@@ -510,7 +443,7 @@ export const MAJORS = [
   { key: 'electronics', ar: 'الإلكترونيات', en: 'Electronics' },
   { key: 'optics', ar: 'البصريات', en: 'Optics' },
 
-  // 🔬 Exact Sciences
+  //  Exact Sciences
   { key: 'mathematics', ar: 'الرياضيات', en: 'Mathematics' },
   { key: 'applied_mathematics', ar: 'الرياضيات التطبيقية', en: 'Applied Mathematics' },
   { key: 'physics', ar: 'الفيزياء', en: 'Physics' },
@@ -519,7 +452,7 @@ export const MAJORS = [
   { key: 'applied_chemistry', ar: 'الكيمياء التطبيقية', en: 'Applied Chemistry' },
   { key: 'materials_science', ar: 'علوم المادة', en: 'Materials Science' },
 
-  // 🌱 Natural & Life Sciences
+  //  Natural & Life Sciences
   { key: 'biology', ar: 'علوم الطبيعة والحياة', en: 'Natural and Life Sciences' },
   { key: 'biochemistry', ar: 'الكيمياء الحيوية', en: 'Biochemistry' },
   { key: 'microbiology', ar: 'علم الأحياء الدقيقة', en: 'Microbiology' },
@@ -530,7 +463,7 @@ export const MAJORS = [
   { key: 'forestry', ar: 'علوم الغابات', en: 'Forestry' },
   { key: 'fisheries', ar: 'علوم الصيد البحري', en: 'Fisheries Science' },
 
-  // 💰 Economics & Management
+  //  Economics & Management
   { key: 'economics', ar: 'العلوم الاقتصادية', en: 'Economic Sciences' },
   { key: 'commercial_sciences', ar: 'العلوم التجارية', en: 'Commercial Sciences' },
   { key: 'management', ar: 'علوم التسيير', en: 'Management Sciences' },
@@ -541,13 +474,13 @@ export const MAJORS = [
   { key: 'human_resources', ar: 'تسيير الموارد البشرية', en: 'Human Resources Management' },
   { key: 'international_economics', ar: 'الاقتصاد الدولي', en: 'International Economics' },
 
-  // ⚖️ Law & Political Sciences
+  //  Law & Political Sciences
   { key: 'law', ar: 'الحقوق', en: 'Law' },
   { key: 'political_science', ar: 'العلوم السياسية', en: 'Political Science' },
   { key: 'international_relations', ar: 'العلاقات الدولية', en: 'International Relations' },
   { key: 'public_administration', ar: 'الإدارة العمومية', en: 'Public Administration' },
 
-  // 📚 Humanities & Languages
+  //  Humanities & Languages
   { key: 'arabic_language', ar: 'اللغة والأدب العربي', en: 'Arabic Language and Literature' },
   { key: 'french', ar: 'اللغة الفرنسية', en: 'French Language' },
   { key: 'english', ar: 'اللغة الإنجليزية', en: 'English Language' },
@@ -561,7 +494,7 @@ export const MAJORS = [
   { key: 'geography', ar: 'الجغرافيا', en: 'Geography' },
   { key: 'archaeology', ar: 'علم الآثار', en: 'Archaeology' },
 
-  // 🧠 Social Sciences
+  //  Social Sciences
   { key: 'psychology', ar: 'علم النفس', en: 'Psychology' },
   { key: 'sociology', ar: 'علم الاجتماع', en: 'Sociology' },
   { key: 'education_sciences', ar: 'علوم التربية', en: 'Educational Sciences' },
@@ -569,53 +502,43 @@ export const MAJORS = [
   { key: 'communication', ar: 'علوم الإعلام والاتصال', en: 'Communication and Media Sciences' },
   { key: 'information_communication', ar: 'الإعلام والاتصال', en: 'Information and Communication' },
 
-  // 🕌 Islamic Sciences
+  //  Islamic Sciences
   { key: 'islamic_sciences', ar: 'العلوم الإسلامية', en: 'Islamic Sciences' },
   { key: 'islamic_law', ar: 'الشريعة الإسلامية', en: 'Islamic Law' },
   { key: 'quranic_sciences', ar: 'علوم القرآن', en: 'Quranic Sciences' },
 
-  // 🏗️ Architecture & Urbanism
+  //  Architecture & Urbanism
   { key: 'architecture', ar: 'الهندسة المعمارية', en: 'Architecture' },
   { key: 'urbanism', ar: 'العمران', en: 'Urban Planning' },
   { key: 'landscape_architecture', ar: 'هندسة المناظر الطبيعية', en: 'Landscape Architecture' },
 
-  // 🎨 Arts & Design
+  //  Arts & Design
   { key: 'fine_arts', ar: 'الفنون الجميلة', en: 'Fine Arts' },
   { key: 'graphic_design', ar: 'التصميم الجرافيكي', en: 'Graphic Design' },
   { key: 'visual_arts', ar: 'الفنون البصرية', en: 'Visual Arts' },
   { key: 'music', ar: 'الموسيقى', en: 'Music' },
 
-  // 🏃 Sports
+  //  Sports
   { key: 'sports_sciences', ar: 'علوم وتقنيات النشاطات البدنية والرياضية', en: 'Sports Sciences and Physical Activities' },
 
-  // 🌍 Earth & Environmental Sciences
+  //  Earth & Environmental Sciences
   { key: 'geology', ar: 'علوم الأرض', en: 'Earth Sciences' },
   { key: 'geophysics', ar: 'الجيوفيزياء', en: 'Geophysics' },
   { key: 'environmental_sciences', ar: 'العلوم البيئية', en: 'Environmental Sciences' },
   { key: 'hydraulics', ar: 'الهندسة الهيدروليكية', en: 'Hydraulics' },
 
-  // 🏨 Tourism & Hospitality
+  //  Tourism & Hospitality
   { key: 'tourism', ar: 'السياحة', en: 'Tourism' },
   { key: 'hotel_management', ar: 'الفندقة', en: 'Hotel Management' },
 
-  // 🚢 Transport & Logistics
+  //  Transport & Logistics
   { key: 'transportation', ar: 'النقل', en: 'Transportation' },
   { key: 'logistics', ar: 'اللوجستيك', en: 'Logistics' },
 
-  // 🧑‍🏫 Education
+  // Education
   { key: 'physical_education', ar: 'التربية البدنية والرياضية', en: 'Physical Education' },
   { key: 'teacher_education', ar: 'علوم التربية والتعليم', en: 'Teacher Education' }
 ];
-
-
-
-
-
-
-
-
-
-
 
 
 
